@@ -1,0 +1,4 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.type = void 0;
+exports.type = "#graphql \n input EmailProps {\n    email: String!\n    emailType: String!\n }\n\n\n input UpdateUserProp{\n  firstName:          String\n  lastName:           String\n  profileImageUlr:    String\n }\n\n input UserProp { \n  email:              String!\n  firstName:          String!\n  lastName:           String!\n  password:           String!\n  profileImageUlr:    String\n }\n\n input singInProp {\n   email: String!\n   password:String!\n }\n\n type User { \n     id: ID\n     email:           String\n  firstName:          String\n  lastName:           String\n  password:           String\n  profileImageUlr:    String\n  tweets: [Tweet]\n  postReplies:[Tweet]\n  follower:[User]\n  following:[User]\n }\n\n type UserObject {\n   user: User\n   message: String\n }\n\n";
